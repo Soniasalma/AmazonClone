@@ -72,9 +72,12 @@ const Registration = () => {
     let APIResponse = [];
 
     try {
-      let response = await axios.post('http://localhost:8000/post', {
-        reCAPTCHA_TOKEN: token,
-      });
+      let response = await axios.post(
+        'https://my-amazon-clone-rxyz.onrender.com/post',
+        {
+          reCAPTCHA_TOKEN: token,
+        }
+      );
 
       APIResponse.push(response['data']);
       //console.log(APIResponse);

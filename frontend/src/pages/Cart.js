@@ -42,7 +42,7 @@ const Cart = () => {
   };
   const payment = async (token) => {
     await axios
-      .post('http://localhost:8000/pay', {
+      .post('https://my-amazon-clone-rxyz.onrender.com/pay', {
         amount: totalPrice * 100,
         token: token,
       })

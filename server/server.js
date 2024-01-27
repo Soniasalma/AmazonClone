@@ -19,10 +19,10 @@ const secretkey = process.env.REACT_APP_SECRET_KEY;
 app.get('/', (req, res) => {
   console.log('Hello World');
 });
-console.log('hello');
-console.log(sitekey);
-console.log(secretkey);
-console.log('hello');
+//console.log('hello');
+//console.log(sitekey);
+//console.log(secretkey);
+//console.log('hello');
 
 //add router in express app
 app.use('/', router);
