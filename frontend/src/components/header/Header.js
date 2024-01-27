@@ -135,7 +135,7 @@ const Header = () => {
           {/* ============ Deliver End here ================ */}
           {/* ============ Search Start here =============== */}
 
-          <div className=" h-9 xl:h-10 rounded-md  order-last  lg:order-none  flex items-center flex-grow   flex-shrink-0 lg:flex-shrink  relative  ">
+          <div className=" h-9 xl:h-10 rounded-md  order-last lg:order-none overflow-x-auto  flex items-center flex-grow   flex-shrink-0 lg:flex-shrink  relative  ">
             <div className=" h-full" ref={catMenu}>
               <span
                 onClick={() => setShowAll(!showAll)}
@@ -182,7 +182,7 @@ const Header = () => {
             />
             <Link
               to="/"
-              className="w-12 h-full flex items-center justify-center bg-amazon_yellow hover:bg-[#f3a847] duration-300 text-amazon_blue cursor-pointer rounded-tr-md rounded-br-md"
+              className=" w-12 h-full flex items-center justify-center bg-amazon_yellow hover:bg-[#f3a847] duration-300 text-amazon_blue cursor-pointer rounded-tr-md rounded-br-md"
             >
               <span>
                 <SearchIcon />
