@@ -135,8 +135,8 @@ const Header = () => {
           {/* ============ Deliver End here ================ */}
           {/* ============ Search Start here =============== */}
 
-          <div className=" h-9 xl:h-10 rounded-md  order-last lg:order-none overflow-x-auto  flex items-center flex-grow   flex-shrink-0 lg:flex-shrink  relative  ">
-            <div className=" h-full" ref={catMenu}>
+          <div className="   h-9 xl:h-10 rounded-md   order-last  md:order-none  flex items-center flex-grow   flex-shrink-0 md:flex-shrink  relative  ">
+            <div className=" h-full hidden  sm:block" ref={catMenu}>
               <span
                 onClick={() => setShowAll(!showAll)}
                 className=" h-full bg-gray-200 hover:bg-gray-300 border-2 cursor-pointer duration-300 text-sm text-amazon_blue font-titleFont flex items-center justify-center 
@@ -174,7 +174,7 @@ const Header = () => {
             </div>
 
             <input
-              className="h-full text-base text-amazon_blue flex-grow outline-none border-none px-2"
+              className="h-full  text-base rounded-l-md sm:rounded-l-none text-amazon_blue flex-grow outline-none border-none px-2"
               type="text"
               placeholder="Search..."
               value={search}
@@ -182,10 +182,10 @@ const Header = () => {
             />
             <Link
               to="/"
-              className=" w-12 h-full flex items-center justify-center bg-amazon_yellow hover:bg-[#f3a847] duration-300 text-amazon_blue cursor-pointer rounded-tr-md rounded-br-md"
+              className="w-8 sm:w-12 h-full flex items-center justify-center bg-amazon_yellow hover:bg-[#f3a847] duration-300 text-amazon_blue cursor-pointer rounded-tr-md rounded-br-md"
             >
               <span>
-                <SearchIcon />
+                <SearchIcon className="text-xs sm:text-lg" />
               </span>
             </Link>
           </div>
