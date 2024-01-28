@@ -73,7 +73,7 @@ const Registration = () => {
 
     try {
       let response = await axios.post(
-        'https://my-amazon-clone-rxyz.onrender.com/post',
+        'https://backend-amazon-cfmb.onrender.com/post',
         {
           reCAPTCHA_TOKEN: token,
         }
