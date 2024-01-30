@@ -44,7 +44,7 @@ const Header = () => {
   useEffect(() => {
     setShowAll(false);
     setShowListUser(false);
-    setShowWishList(false);
+    // setShowWishList(false);
     const handleClickOutside = (event) => {
       if (catMenu.current && !catMenu.current.contains(event.target)) {
         setShowAll(false);

@@ -341,7 +341,7 @@ const Registration = () => {
               </div>
               <div className="flex items-center justify-center w-full">
                 <ReCAPTCHA
-                  sitekey="6LenrFUpAAAAAPYE3GcYCjeBRmu5tOQ5Sm86Gekg"
+                  sitekey="6LfVxl4pAAAAAElZ8mbfRThajleCddt1U8nE755g"
                   ref={capRef}
                   onChange={() => setErrorRecaptcha(false)}
                 />
